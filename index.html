@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internet Terminology — Home</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #161b22, #1a2332);
+      padding: 60px 40px 40px;
+      text-align: center;
+      border-bottom: 2px solid #21d4fd;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #21d4fd;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    header p {
+      color: #8b949e;
+      font-size: 1.1rem;
+    }
+    nav {
+      background: #161b22;
+      padding: 14px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      border-bottom: 1px solid #30363d;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      padding: 6px 14px;
+      border: 1px solid #30363d;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    nav a:hover, nav a.active {
+      background: #21d4fd;
+      color: #0d1117;
+      border-color: #21d4fd;
+    }
+    main {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 30px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .intro h2 { font-size: 1.8rem; color: #21d4fd; margin-bottom: 12px; }
+    .intro p { color: #8b949e; font-size: 1rem; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 28px 22px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s;
+      display: block;
+    }
+    .card:hover {
+      border-color: #21d4fd;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(33,212,253,0.15);
+    }
+    .card .icon { font-size: 2.2rem; margin-bottom: 14px; }
+    .card h3 { color: #58a6ff; font-size: 1.1rem; margin-bottom: 8px; }
+    .card p { color: #8b949e; font-size: 0.88rem; line-height: 1.5; }
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+      margin-top: 80px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌐 Internet Terminology</h1>
+  <p>Your complete guide to understanding the language of the Internet</p>
+</header>
+
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="internet.html">Internet</a>
+  <a href="www.html">WWW</a>
+  <a href="browser.html">Browser</a>
+  <a href="url.html">URL</a>
+  <a href="http.html">HTTP</a>
+  <a href="isp.html">ISP</a>
+  <a href="ip-address.html">IP Address</a>
+  <a href="bandwidth.html">Bandwidth</a>
+  <a href="dns.html">DNS</a>
+  <a href="firewall.html">Firewall</a>
+</nav>
+
+<main>
+  <div class="intro">
+    <h2>Welcome to Internet Terminology</h2>
+    <p>This site explains the core concepts behind how the Internet works — from the basic infrastructure to the protocols that power every web page you visit.</p>
+  </div>
+
+  <div class="grid">
+    <a href="internet.html" class="card">
+      <div class="icon">🌍</div>
+      <h3>Internet</h3>
+      <p>The global network connecting billions of devices worldwide.</p>
+    </a>
+    <a href="www.html" class="card">
+      <div class="icon">🕸️</div>
+      <h3>World Wide Web (WWW)</h3>
+      <p>The system of linked documents accessed via the Internet.</p>
+    </a>
+    <a href="browser.html" class="card">
+      <div class="icon">🖥️</div>
+      <h3>Web Browser</h3>
+      <p>Software used to access and navigate web pages.</p>
+    </a>
+    <a href="url.html" class="card">
+      <div class="icon">🔗</div>
+      <h3>URL</h3>
+      <p>Uniform Resource Locator — the address of a web page.</p>
+    </a>
+    <a href="http.html" class="card">
+      <div class="icon">📡</div>
+      <h3>HTTP / HTTPS</h3>
+      <p>Protocols that define how data is transferred on the web.</p>
+    </a>
+    <a href="isp.html" class="card">
+      <div class="icon">🏢</div>
+      <h3>ISP</h3>
+      <p>Internet Service Provider — companies that connect you to the Internet.</p>
+    </a>
+    <a href="ip-address.html" class="card">
+      <div class="icon">🔢</div>
+      <h3>IP Address</h3>
+      <p>A unique numerical label assigned to every device on a network.</p>
+    </a>
+    <a href="bandwidth.html" class="card">
+      <div class="icon">⚡</div>
+      <h3>Bandwidth</h3>
+      <p>The maximum rate of data transfer across a network connection.</p>
+    </a>
+    <a href="dns.html" class="card">
+      <div class="icon">📖</div>
+      <h3>DNS</h3>
+      <p>Domain Name System — the Internet's address book.</p>
+    </a>
+    <a href="firewall.html" class="card">
+      <div class="icon">🛡️</div>
+      <h3>Firewall</h3>
+      <p>A security system that monitors and controls network traffic.</p>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <p>Internet Terminology Project &mdash; All rights reserved &copy; 2025</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>URL — Internet Terminology</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; background: #0d1117; color: #e6edf3; min-height: 100vh; }
+    header { background: linear-gradient(135deg, #161b22, #1a2332); padding: 50px 40px 30px; text-align: center; border-bottom: 2px solid #21d4fd; }
+    header h1 { font-size: 2.6rem; color: #21d4fd; letter-spacing: 2px; margin-bottom: 10px; }
+    header p { color: #8b949e; font-size: 1rem; }
+    nav { background: #161b22; padding: 14px 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; border-bottom: 1px solid #30363d; position: sticky; top: 0; z-index: 100; }
+    nav a { color: #58a6ff; text-decoration: none; padding: 6px 14px; border: 1px solid #30363d; border-radius: 20px; font-size: 0.85rem; transition: all 0.2s; }
+    nav a:hover, nav a.active { background: #21d4fd; color: #0d1117; border-color: #21d4fd; }
+    main { max-width: 860px; margin: 50px auto; padding: 0 30px; }
+    .term-img { width: 100%; max-height: 320px; object-fit: cover; border-radius: 12px; margin-bottom: 36px; border: 1px solid #30363d; }
+    .term-img-placeholder { width: 100%; height: 220px; background: linear-gradient(135deg, #161b22, #1e2a3a); border-radius: 12px; margin-bottom: 36px; border: 2px dashed #30363d; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px; }
+    .term-img-placeholder .icon { font-size: 4rem; }
+    .term-img-placeholder p { color: #8b949e; font-size: 0.9rem; }
+    h2 { color: #58a6ff; font-size: 1.7rem; margin: 32px 0 14px; }
+    p { color: #c9d1d9; line-height: 1.8; margin-bottom: 16px; font-size: 1rem; }
+    .highlight-box { background: #161b22; border-left: 4px solid #21d4fd; border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 28px 0; }
+    .highlight-box p { margin: 0; color: #8b949e; font-style: italic; }
+    ul { color: #c9d1d9; line-height: 1.9; padding-left: 24px; margin-bottom: 20px; }
+    ul li { margin-bottom: 6px; }
+    .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 28px 0; }
+    .fact-card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 18px; text-align: center; }
+    .fact-card .label { color: #8b949e; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .fact-card .value { color: #21d4fd; font-size: 1.3rem; font-weight: bold; }
+    .nav-links { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 30px; border-top: 1px solid #30363d; }
+    .nav-links a { color: #58a6ff; text-decoration: none; padding: 10px 20px; border: 1px solid #30363d; border-radius: 8px; transition: all 0.2s; font-size: 0.9rem; }
+    .nav-links a:hover { border-color: #21d4fd; color: #21d4fd; }
+    footer { text-align: center; padding: 40px; color: #8b949e; border-top: 1px solid #30363d; margin-top: 60px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>🔗 URL</h1>
+  <p>Uniform Resource Locator — the address of every web page</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="internet.html">Internet</a>
+  <a href="www.html">WWW</a>
+  <a href="browser.html">Browser</a>
+  <a href="url.html">URL</a>
+  <a href="http.html">HTTP</a>
+  <a href="isp.html">ISP</a>
+  <a href="ip-address.html">IP Address</a>
+  <a href="bandwidth.html">Bandwidth</a>
+  <a href="dns.html">DNS</a>
+  <a href="firewall.html">Firewall</a>
+</nav>
+<main>
+  <div class="term-img-placeholder">
+    <div class="icon">🔗</div>
+    <p>Replace with: images/url.jpg</p>
+  </div>
+
+  <h2>What is URL?</h2>
+  <p>A URL (Uniform Resource Locator) is the complete web address used to locate a specific resource on the Internet. Every web page, image, video, or file on the Internet has a unique URL. It tells your browser exactly where to find a resource and how to access it. A URL is what you type into a browser's address bar.</p>
+
+  <div class="highlight-box">
+    <p>💡 Key Insight: A URL has several parts: the Protocol (https://), which defines how data is transferred; the Domain Name (www.example.co...</p>
+  </div>
+
+  <div class="fact-grid">
+    <div class="fact-card"><div class="label">Protocol</div><div class="value">https://</div></div>
+<div class="fact-card"><div class="label">Domain</div><div class="value">example.com</div></div>
+<div class="fact-card"><div class="label">Path</div><div class="value">/page/name</div></div>
+<div class="fact-card"><div class="label">Max Length</div><div class="value">~2,000 characters</div></div>
+
+  </div>
+
+  <h2>Parts of a URL</h2>
+<p>A URL has several parts: the Protocol (https://), which defines how data is transferred; the Domain Name (www.example.com), which identifies the website; the Path (/page/about), which points to a specific page; and Query Strings (?id=5), which pass additional data. Understanding each part helps you navigate the web more effectively.</p>
+<h2>Absolute vs Relative URLs</h2>
+<p>An absolute URL contains the full address including the protocol and domain (e.g., https://www.example.com/page). A relative URL only contains the path, relative to the current page (e.g., /about or ../images/photo.jpg). Relative URLs are commonly used in HTML code within a website.</p>
+<h2>URL Encoding</h2>
+<p>URLs can only contain certain characters. Special characters (like spaces, symbols, or non-ASCII letters) must be encoded using percent-encoding. For example, a space becomes %20 and & becomes %26. This ensures URLs are transmitted correctly across the Internet without misinterpretation.</p>
+
+
+  <div class="nav-links">
+    <a href="browser.html">← Browser</a>
+    <a href="index.html">🏠 Home</a>
+    <a href="http.html">HTTP →</a>
+  </div>
+</main>
+<footer>
+  <p>Internet Terminology Project &mdash; All rights reserved &copy; 2025</p>
+</footer>
+</body>
+</html>

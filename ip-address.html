@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IP Address — Internet Terminology</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; background: #0d1117; color: #e6edf3; min-height: 100vh; }
+    header { background: linear-gradient(135deg, #161b22, #1a2332); padding: 50px 40px 30px; text-align: center; border-bottom: 2px solid #21d4fd; }
+    header h1 { font-size: 2.6rem; color: #21d4fd; letter-spacing: 2px; margin-bottom: 10px; }
+    header p { color: #8b949e; font-size: 1rem; }
+    nav { background: #161b22; padding: 14px 40px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; border-bottom: 1px solid #30363d; position: sticky; top: 0; z-index: 100; }
+    nav a { color: #58a6ff; text-decoration: none; padding: 6px 14px; border: 1px solid #30363d; border-radius: 20px; font-size: 0.85rem; transition: all 0.2s; }
+    nav a:hover, nav a.active { background: #21d4fd; color: #0d1117; border-color: #21d4fd; }
+    main { max-width: 860px; margin: 50px auto; padding: 0 30px; }
+    .term-img { width: 100%; max-height: 320px; object-fit: cover; border-radius: 12px; margin-bottom: 36px; border: 1px solid #30363d; }
+    .term-img-placeholder { width: 100%; height: 220px; background: linear-gradient(135deg, #161b22, #1e2a3a); border-radius: 12px; margin-bottom: 36px; border: 2px dashed #30363d; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px; }
+    .term-img-placeholder .icon { font-size: 4rem; }
+    .term-img-placeholder p { color: #8b949e; font-size: 0.9rem; }
+    h2 { color: #58a6ff; font-size: 1.7rem; margin: 32px 0 14px; }
+    p { color: #c9d1d9; line-height: 1.8; margin-bottom: 16px; font-size: 1rem; }
+    .highlight-box { background: #161b22; border-left: 4px solid #21d4fd; border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 28px 0; }
+    .highlight-box p { margin: 0; color: #8b949e; font-style: italic; }
+    ul { color: #c9d1d9; line-height: 1.9; padding-left: 24px; margin-bottom: 20px; }
+    ul li { margin-bottom: 6px; }
+    .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 28px 0; }
+    .fact-card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 18px; text-align: center; }
+    .fact-card .label { color: #8b949e; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .fact-card .value { color: #21d4fd; font-size: 1.3rem; font-weight: bold; }
+    .nav-links { display: flex; justify-content: space-between; margin-top: 60px; padding-top: 30px; border-top: 1px solid #30363d; }
+    .nav-links a { color: #58a6ff; text-decoration: none; padding: 10px 20px; border: 1px solid #30363d; border-radius: 8px; transition: all 0.2s; font-size: 0.9rem; }
+    .nav-links a:hover { border-color: #21d4fd; color: #21d4fd; }
+    footer { text-align: center; padding: 40px; color: #8b949e; border-top: 1px solid #30363d; margin-top: 60px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>🔢 IP Address</h1>
+  <p>A unique identifier for every device on a network</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="internet.html">Internet</a>
+  <a href="www.html">WWW</a>
+  <a href="browser.html">Browser</a>
+  <a href="url.html">URL</a>
+  <a href="http.html">HTTP</a>
+  <a href="isp.html">ISP</a>
+  <a href="ip-address.html">IP Address</a>
+  <a href="bandwidth.html">Bandwidth</a>
+  <a href="dns.html">DNS</a>
+  <a href="firewall.html">Firewall</a>
+</nav>
+<main>
+  <div class="term-img-placeholder">
+    <div class="icon">🔢</div>
+    <p>Replace with: images/ip-address.jpg</p>
+  </div>
+
+  <h2>What is IP Address?</h2>
+  <p>An IP (Internet Protocol) address is a unique numerical label assigned to every device connected to a computer network that uses the Internet Protocol for communication. It serves two main purposes: identifying the host or network interface, and providing the location of the host in the network. Just as every house needs a postal address to receive mail, every device needs an IP address to communicate on the Internet.</p>
+
+  <div class="highlight-box">
+    <p>💡 Key Insight: There are two versions of IP addresses in use today. IPv4 uses 32-bit addresses written as four groups of numbers (e.g.,...</p>
+  </div>
+
+  <div class="fact-grid">
+    <div class="fact-card"><div class="label">IPv4 Format</div><div class="value">x.x.x.x (0–255)</div></div>
+<div class="fact-card"><div class="label">IPv6 Length</div><div class="value">128-bit</div></div>
+<div class="fact-card"><div class="label">Total IPv4</div><div class="value">4.3 Billion</div></div>
+<div class="fact-card"><div class="label">Your Private IP</div><div class="value">192.168.x.x</div></div>
+
+  </div>
+
+  <h2>IPv4 vs IPv6</h2>
+<p>There are two versions of IP addresses in use today. IPv4 uses 32-bit addresses written as four groups of numbers (e.g., 192.168.1.1), allowing about 4.3 billion unique addresses. As the Internet grew, these addresses ran out. IPv6 was created to solve this — it uses 128-bit addresses (e.g., 2001:0db8:85a3::8a2e:0370:7334), providing virtually unlimited unique addresses for the future.</p>
+<h2>Public vs Private IP Addresses</h2>
+<p>Public IP addresses are assigned by your ISP and are visible on the Internet. Private IP addresses are used within local networks (like your home Wi-Fi). Your router has one public IP address facing the Internet, but assigns private IP addresses (like 192.168.x.x) to all devices in your home. This is called Network Address Translation (NAT).</p>
+<h2>Static vs Dynamic IPs</h2>
+<p>A static IP address never changes — it is permanently assigned to a device. Businesses and servers often use static IPs. A dynamic IP address changes periodically — your ISP assigns you a new one from time to time. Most home Internet connections use dynamic IP addresses. Dynamic IPs are more cost-effective and help with IP address management.</p>
+
+
+  <div class="nav-links">
+    <a href="isp.html">← ISP</a>
+    <a href="index.html">🏠 Home</a>
+    <a href="bandwidth.html">Bandwidth →</a>
+  </div>
+</main>
+<footer>
+  <p>Internet Terminology Project &mdash; All rights reserved &copy; 2025</p>
+</footer>
+</body>
+</html>
